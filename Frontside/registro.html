@@ -38,17 +38,24 @@
                         <h3 class="panel-title">Registrarse</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <form role="form" id="registroForm" name="registro">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Usuario" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="Nombre" name="nombre_txt" id="nombre" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Edad" name="edad_txt" id="edad" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Correo" name="email_txt" id="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Contraseña" name="password_txt" id="password" type="password" value="">
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Registrar me</button>
+                                <input type="hidden" value="regUsuario" name="mode"> 
                             </fieldset>
                         </form>
                     </div>
